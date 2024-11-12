@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reactProject.exam.ExamApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-11-09T15:50:43" hostname="DESKTOP-4QFNJ6H" time="0.684">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.reactProject.exam.ExamApplicationTests" time="0.684"/>
+  <system-out><![CDATA[00:50:41.883 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.reactProject.exam.ExamApplicationTests]: ExamApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:50:41.983 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.reactProject.exam.ExamApplication for test class com.reactProject.exam.ExamApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2024-11-10T00:50:42.323+09:00  INFO 10520 --- [exam] [    Test worker] c.r.exam.ExamApplicationTests            : Starting ExamApplicationTests using Java 17.0.7 with PID 10520 (started by hky09 in C:\Users\hky09\Desktop\exam\exam)
+2024-11-10T00:50:42.324+09:00  INFO 10520 --- [exam] [    Test worker] c.r.exam.ExamApplicationTests            : No active profile set, falling back to 1 default profile: "default"
+2024-11-10T00:50:43.069+09:00  INFO 10520 --- [exam] [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-11-10T00:50:43.299+09:00  INFO 10520 --- [exam] [    Test worker] c.r.exam.ExamApplicationTests            : Started ExamApplicationTests in 1.176 seconds (process running for 2.176)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
