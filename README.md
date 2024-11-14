@@ -31,26 +31,23 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 CREATE SCHEMA react_project;
 
 CREATE TABLE users (
-    user_uuid CHAR(36) NOT NULL,           
-    user_id VARCHAR(255) NOT NULL UNIQUE,  
-    username VARCHAR(255) NOT NULL,        
-    password VARCHAR(255) NOT NULL,        
-    created_at DATETIME NOT NULL,          
-    updated_at DATETIME NOT NULL,          
-
-    PRIMARY KEY (user_uuid)                
+    user_uuid CHAR(36) PRIMARY KEY, 
+    user_id VARCHAR(50) UNIQUE NOT NULL,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL
 );
 
-CREATE TABLE calendar (
-    id VARCHAR(255) NOT NULL,                  
-    title VARCHAR(255) NOT NULL,               
-    description TEXT,                          
-    start_time TIMESTAMP NOT NULL,             
-    end_time TIMESTAMP NOT NULL,               
-    user_id VARCHAR(255) NOT NULL,             
-    share BOOLEAN NOT NULL,                    
-
-    PRIMARY KEY (id)                           
+CREATE TABLE calendar(
+    id VARCHAR(255) NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    start_time TIMESTAMP NOT NULL,
+    end_time TIMESTAMP NOT NULL,
+    share BOOLEAN NOT NULL,
+    user_id VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
 );
 ```
 테이블 생성후 
