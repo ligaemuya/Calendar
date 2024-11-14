@@ -4,14 +4,9 @@
 
 프론트 경로 /src/main/frontend  
 -
-필요 라이브러리 설치 
-- antd 5.21.6 버전 설치
-- dayjs 1.11.13 버전 설치
-- axios 1.7.7 버전 설치
-- react router 설치
-
-웹서버 기동시 3000번 포트로 기동(cors 설정을 3000번 포트에서 입력된 경우만 통과)
+터미널에서 프론트 경로로 이동후 
 ```
+npm install
 npm start 
 ```
 
@@ -44,3 +39,12 @@ CREATE TABLE calendar (
     PRIMARY KEY (id)                           
 );
 ```
+
+application.properties db 설정
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/react_project
+spring.datasource.username=root
+spring.datasource.password=root
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+```
+
