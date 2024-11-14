@@ -74,6 +74,7 @@ JPA : 쿼리작성에 시간을 줄이기위해 사용하였습니다
 
 API 명세 
 - 
+서버 기동후 아래경로 확인
 http://localhost:8080/swagger-ui/index.html#/
 
 기본 CRUD 업무 이외에 추가적인 업무 Api 필수
